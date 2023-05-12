@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Ai Universe</title>
+   <link rel="stylesheet"
+      href="https://horizon-tailwind-react-git-tailwind-components-horizon-ui.vercel.app/static/css/main.ad49aa9b.css" />
+   <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+   <div class="mt-10">
+      <h2 class="text-center text-2xl font-extrabold">AI Universe Hub</h2>
+   </div>
+
+   <div class="flex justify-center mt-3 mb-3">
+      <button class="rounded-full bg-gray-400 px-2 py-1 text-white">Sort by date</button>
+      <button class="px-4 py-2 bg-white rounded mt-5 text-gray-600"></button>
+   </div>
+
+
+   <!-- post grid section -->
+   <div class="flex justify-center">
+      <div id="ai-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4  gap-4 m-5">
+      </div>
+   </div>
+
+      <!-- popup section -->
+      <div class="h-screen w-full fixed left-0 top-0 flex justify-center items-center modal hidden bg-gray-400 bg-opacity-50">
+         <div class="rounded-md flex flex-row gap-5 justify-center items-center sm:w-11/12 md:w-10/12 lg:w-8/12 p-5 bg-white">
+            
+               <div class="!z-5 relative flex flex-col rounded-[20px] bg-clip-border w-2/4 justify-center">
+                  <div class="h-full w-full">
+                     <div class="bg-orange-50 p-5 border border-orange-500 rounded-md">
+                        <div id="description" class="font-bold text-sm break-all mb-3"></div>
+               
+                        <div class="flex flex-row flex-wrap gap-4 text-sm justify-center mb-5">
+                           <div id="basic-price" class="px-2 py-2 bg-white rounded font-bold text-green-500">
+
+                           </div>
+                           <div id="md-price" class="px-2 py-2 bg-white rounded font-bold text-orange-500">
+                           </div>
+                           <div id="high-price" class="px-2 py-2 bg-white rounded font-bold text-red-500">
+                           </div>
+                        </div>
+               
+                        <div class="flex flex-row gap-6 justify-center">
+                           <div>
+                              <p class="text-lg font-bold">Features</p>
+                              <div id="Featureslist">
+                              </div>
+                           </div>
+                           <div>
+                              <p class="text-lg font-bold">Integrations</p>
+                              <div id="integrationList">
+                              </div>
+                           </div>
+                        </div>
+                  </div>
+               </div>
+            </div>
+
+
+            <div class="border border-gray-300 rounded-md w-2/4">
+               <div class="!z-5 relative flex flex-col rounded-[20px] bg-white bg-clip-border shadow-3xl shadow-shadow-500 flex flex-col w-full !p-4 3xl:p-![18px] bg-white undefined">
+                  <div class="w-full">
+                     <div id="modal-img" class="relative w-full">
+                     </div>
+                     <div class="mb-3 flex items-center justify-center px-1 md:items-start">
+                        <div class="mb-2">
+                           <p class="text-xl font-bold text-navy-700">Hi, how are you doing today?</p>
+                           <p class="mt-1 text-sm font-medium text-gray-600 md:mt-2">I'm doing well, thank you for asking. How can I assist you today?</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="static">
+                     <div class="absolute top-0 right-0">
+                        <button class="px-4 py-2 bg-white rounded text-orange-600 closeModal">X</button>
+                     </div>
+                  </div>
+               </div>
+   
+         </div>
+      </div>
+   </div>
+
+      
+   <div class="flex justify-center mt-3 mb-3">
+      <button id="seemore" class="rounded-full bg-gray-400 px-3 py-1 text-white hidden">See more</button>
+   </div>
+
+   <script src="js/app.js"></script>
+</body>
+
+</html>
